@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Provider Management System</title>
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f4f6f9;
+color:#333;
+}
+
+.container{
+width:90%;
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+/* PROJECT CARD */
+
+.project-card{
+background:#fff;
+border-radius:10px;
+box-shadow:0 2px 12px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+
+.project-img{
+width:100%;
+height:auto;
+display:block;
+}
+
+.project-content{
+padding:25px;
+}
+
+.project-title{
+font-size:28px;
+margin-bottom:10px;
+color:#1e293b;
+}
+
+.project-desc{
+font-size:18px;
+color:#6b7280;
+margin-bottom:20px;
+}
+
+.status-bar{
+background:#e5e7eb;
+border-radius:20px;
+overflow:hidden;
+margin-bottom:15px;
+}
+
+.status-fill{
+background:#2e7d5b;
+color:white;
+text-align:center;
+padding:8px;
+font-weight:bold;
+}
+
+.tech{
+color:#6b7280;
+margin-bottom:20px;
+}
+
+/* PREVIEW BUTTON */
+
+.preview-btn{
+display:block;
+text-align:center;
+border:2px solid #3b82f6;
+padding:12px;
+border-radius:8px;
+color:#3b82f6;
+font-weight:600;
+cursor:pointer;
+position:relative;
+overflow:hidden;
+transition:all 0.3s ease;
+}
+
+/* Hover Animation */
+
+.preview-btn:hover{
+color:white;
+background:#3b82f6;
+transform:translateY(-2px);
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Click Animation */
+
+.preview-btn:active{
+transform:scale(0.96);
+}
+
+/* HIDDEN CONTENT */
+
+.banner-content{
+max-height:0;
+overflow:hidden;
+transition:max-height 0.6s ease;
+}
+
+.banner-card.active .banner-content{
+max-height:2000px;
+}
+
+.banner-content-inner{
+padding:30px;
+background:white;
+border-radius:10px;
+margin-top:20px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+color:#0f172a;
+margin-top:25px;
+}
+
+ul{
+padding-left:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="banner-card">
+
+<!-- PROJECT CARD -->
+<div class="project-card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoIDRPeWLqKrLmGxskqDehu-tQUz4sh0fD9w&s" alt="Service Provider Management System" class="project-img">
+
+<div class="project-content">
+
+<div class="project-title">
+Service Provider Management System
+</div>
+
+<div class="project-desc">
+A system to manage all event-related data within an organization effectively.
+</div>
+
+<div class="status-bar">
+<div class="status-fill">
+Completed
+</div>
+</div>
+
+<div class="tech">
+PHP, MySQL, HTML, CSS, Bootstrap, JavaScript
+</div>
+
+<div class="preview-btn" id="previewBtn">
+Preview
+</div>
+
+</div>
+</div>
+
+<!-- EXPAND CONTENT -->
+
+<div class="banner-content">
+<div class="banner-content-inner">
+
+<p>
+Service Provider Management System is a web based application developed to manage and organize electronic repair services and service providers efficiently.
+</p>
+
+<h2>Objective</h2>
+
+<p>
+The main objective of the Service Provider Management System is to develop a centralized platform that manages information related to service providers and customer service requests.
+</p>
+
+<h2>Features</h2>
+
+<ul>
+<li>User Registration and Login</li>
+<li>View Electronic Repair Services</li>
+<li>Submit Service Requests</li>
+<li>Admin Dashboard</li>
+<li>Service Provider Management</li>
+<li>Customer Inquiry Management</li>
+</ul>
+
+<h2>Technologies Used</h2>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+<li>PHP</li>
+<li>MySQL</li>
+<li>XAMPP</li>
+</ul>
+
+<h2>Author</h2>
+
+<p>
+<b>Raj Modi</b><br>
+M.Sc (CA & IT)<br>
+Hemchandracharya North Gujarat University
+</p>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const previewBtn = document.getElementById("previewBtn");
+const bannerCard = document.querySelector(".banner-card");
+
+previewBtn.addEventListener("click", function(){
+bannerCard.classList.toggle("active");
+});
+
+</script>
+
+</body>
+</html>
