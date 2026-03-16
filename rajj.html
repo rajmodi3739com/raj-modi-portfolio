@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Raj Modi Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+scroll-behavior:smooth;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#020617;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:100px 10%;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(120deg,#0f172a,#1e293b);
+}
+
+.hero img{
+width:150px;
+height:150px;
+border-radius:50%;
+margin-bottom:20px;
+border:3px solid #38bdf8;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+border-radius:30px;
+margin-top:20px;
+text-decoration:none;
+color:black;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+transition:.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-10px);
+background:#334155;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+transition:.3s;
+}
+
+.project-card:hover{
+transform:scale(1.05);
+}
+
+.project-card a{
+display:inline-block;
+margin-top:10px;
+color:#38bdf8;
+text-decoration:none;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>MyPortfolio</h2>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<img src="uraj.jpg" alt="Raj Modi">
+
+<h1>Hello, I'm <span>Raj Modi</span></h1>
+
+<p>Full Stack Developer | Web Developer</p>
+
+<a href="#contact" class="btn">Hire Me</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<br>
+
+<div class="about">
+
+<p>
+I am a passionate IT graduate from Hemchandracharya North Gujarat University.
+I enjoy building modern websites and learning new technologies.
+My goal is to become a professional Full Stack Developer and work on
+innovative digital projects.
+</p>
+
+<p>
+I continuously improve my skills in programming and system
+development while exploring modern technologies.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>My Skills</h2>
+<p>Technologies & abilities I’ve worked with so far.</p>
+
+<br>
+
+<div class="skills">
+
+<div class="skill-card">
+<h3>HTML</h3>
+<p>Responsive Web Design</p>
+</div>
+
+<div class="skill-card">
+<h3>CSS</h3>
+<p>Modern UI Design</p>
+</div>
+
+<div class="skill-card">
+<h3>Bootstrap</h3>
+<p>Mobile First Layout</p>
+</div>
+
+<div class="skill-card">
+<h3>PHP</h3>
+<p>Frontend & Backend Development</p>
+</div>
+
+<div class="skill-card">
+<h3>Programming</h3>
+<p>Problem Solving</p>
+</div>
+
+<div class="skill-card">
+<h3>MySQL</h3>
+<p>Database Management</p>
+</div>
+
+</div>
+
+<br><br>
+
+<h2>Tools & Platforms</h2>
+
+<div class="skills">
+
+<div class="skill-card"><p>VS Code</p></div>
+<div class="skill-card"><p>Netlify</p></div>
+<div class="skill-card"><p>XAMPP / WAMP</p></div>
+
+</div>
+
+<br><br>
+
+<h2>Soft Skills</h2>
+
+<div class="skills">
+
+<div class="skill-card"><p>Problem Solving</p></div>
+<div class="skill-card"><p>Quick Learning</p></div>
+<div class="skill-card"><p>Time Management</p></div>
+<div class="skill-card"><p>Communication</p></div>
+<div class="skill-card"><p>Self-Motivation</p></div>
+<div class="skill-card"><p>Team Collaboration</p></div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<br>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Service Provider Management System</h3>
+<p>
+Developed using PHP, MySQL and Bootstrap.
+This system manages service providers and customer service requests.
+</p>
+<a href="https://rjspms.netlify.app/" target="_blank">View Project</a>
+</div>
+
+<div class="project-card">
+<h3>Video Editing Portfolio</h3>
+<p>
+This portfolio is developed using HTML and CSS to showcase reels, shorts and video editing projects.
+</p>
+<a href="https://rajmodisecond.netlify.app/" target="_blank">View Project</a>
+</div>
+
+<div class="project-card">
+<h3>Gym Management System</h3>
+<p>
+Gym Management System developed using HTML, CSS, JavaScript, PHP, MySQL and Bootstrap.
+The system manages gym members, membership plans, and daily gym operations.
+</p>
+
+<a href="#" onclick="comingSoon()">Coming Soon</a>
+</div>
+<script>
+function comingSoon(){
+alert("This project is coming soon!");
+}
+</script>
+
+<div class="project-card">
+<h3>Portfolio Website</h3>
+<p>
+My personal website with admin panel to manage  projects, and skills.
+</p>
+<b><p>HTML, CSS, Bootstrap, PHP</p></b>
+<a href="#">View Portfolio</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<br>
+
+<div class="contact">
+
+<p>Email: rajmodi3739@gmail.com</p>
+<p>Phone: +91 7041687457</p>
+
+<br>
+
+<a class="btn" href="mailto:rajmodi3739@gmail.com">Email Me</a>
+<a class="btn" href="https://www.linkedin.com/in/raj-modi-" target="_blank">LinkedIn</a>
+<a class="btn" href="https://wa.me/917041687457" target="_blank">WhatsApp</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Raj Modi Portfolio</p>
+
+</footer>
+
+</body>
+</html>
